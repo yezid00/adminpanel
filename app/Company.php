@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Company extends Model
 {
-    public fuction employees(){
+    public function employees(){
     	return $this->hasMany('App\Employee');
     }
 }
