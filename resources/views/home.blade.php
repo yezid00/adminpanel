@@ -8,13 +8,17 @@
                 <div class="card-header">Dashboard</div>
 
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
+                    <div class="row">
+                        <div class="col">
+                            <a href="{{ route('companies.create') }}" class="btn btn-primary btn-lg">Create new company</a>
                         </div>
-                    @endif
-
-                    You are logged in!
+                        <div class="col">
+                            <a href="{{ route('companies.index') }}" class="btn btn-primary btn-lg">View lists of company</a>
+                        </div>
+                    </div>
+                    
+                    
+                   
                 </div>
             </div>
         </div>
