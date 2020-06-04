@@ -21,7 +21,7 @@
                             <tbody>
                                 @foreach($companies as $company)
                                     <tr>
-                                    <td>{{ $company->name }}</td>
+                                    <td><a href="{{ route('companies.show',$company->id) }}">{{ $company->name }}</a></td>
                                     <td>{{ $company->address }}</td>
                                     <td><a href="{{ $company->website }}">{{ $company->website }}</a></td>
                                     <td>{{ $company->email }}</td>
