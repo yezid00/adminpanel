@@ -10928,3 +10928,20 @@ a.text-dark:focus {
   }
 }
 
+.wrapper{
+  text-align: center;
+}
+.wrapper h2{
+    letter-spacing: 0.2em;
+}
+.wrapper p{
+  font-size: 32px;
+}
+
+.cp{
+  margin-left: 30px;
+}
+
+.cp-col{
+  margin-left: 400px;
+}
