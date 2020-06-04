@@ -1,11 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <div>
-        <a href="{{ route('home') }}" class="btn btn-primary">Dashboard</a>
-    </div>
-    
-    <br>
+     
+    <h4 class="lead">List of companies</h4>
     <div>
         @if(count($companies)>0)
                         <table class="table">
@@ -23,8 +20,9 @@
                                     <tr>
                                     <td><a href="{{ route('companies.show',$company->id) }}">{{ $company->name }}</a></td>
                                     <td>{{ $company->address }}</td>
-                                    <td><a href="{{ $company->website }}">{{ $company->website }}</a></td>
+                                    <td>{{ $company->website }}</td>
                                     <td>{{ $company->email }}</td>
+                                    @if(!Auth::guest())
                                     <td>
                                         <div class="row">
                                             <div class="col">
@@ -39,6 +37,7 @@
                                         
                                         
                                     </td>
+                                    @endif
                                 </tr>
                                 @endforeach
                             </tbody>
