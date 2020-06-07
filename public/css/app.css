@@ -10945,3 +10945,10 @@ a.text-dark:focus {
 .cp-col{
   margin-left: 400px;
 }
+
+.table-wrapper{
+  width:100% important;
+  overflow-x: scroll;
+}
+
+  

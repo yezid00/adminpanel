@@ -9,7 +9,7 @@
 			<h2>Welcome to {{ $company->name }}</h2>
 			<br>
 			<h5>List of Employees</h5>
-			<div>
+			<div class="table-wrapper">
 				<table class="table">
 					<thead>
 						<tr>
@@ -18,7 +18,7 @@
 							<th scope="col">Lastname</th>
 							<th scope="col">Email</th>
 							<th scope="col">Phone</th>
-							<th></th>
+							
 						</tr>
 						<tbody>
 							@foreach($company->employees as $employee)
